@@ -31,11 +31,14 @@ public class Student {
     @Column(name = "address")
     private String address;
 
-    @Column(name = "roll_no", nullable = false)
+    @Column(name = "roll_no", nullable = false, unique = true)
     private Integer rollNo;
 
-    @Column(name = "phone")
+    @Column(name = "phone", unique = true)
     private Long phone;
+
+    @Column(name = "batch")
+    private Integer batch;
 
     @OneToOne
     @JoinColumn(name = "user_id", referencedColumnName = "uid")
