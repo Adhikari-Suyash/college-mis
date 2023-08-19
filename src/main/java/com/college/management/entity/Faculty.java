@@ -27,7 +27,4 @@ public class Faculty {
 
     @Column(name = "semesters", nullable = false)
     private Integer semesters;
-
-    @OneToMany
-    private List<Semester> semester;
 }

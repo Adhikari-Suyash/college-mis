@@ -27,7 +27,4 @@ public class Semester {
 
     @ManyToOne
     private Faculty faculty;
-
-    @OneToMany
-    private List<Subject> subjects;
 }

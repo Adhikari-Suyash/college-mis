@@ -43,4 +43,12 @@ public class Student {
     @OneToOne
     @JoinColumn(name = "user_id", referencedColumnName = "uid")
     private User user;
+
+    @ManyToOne
+    @JoinColumn(name = "faculty_id")
+    private Faculty faculty;
+
+    @ManyToOne
+    @JoinColumn(name = "semester_id")
+    private Semester semester;
 }
